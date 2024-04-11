@@ -29,23 +29,17 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
+        // Constant variable to access the superhero fields
         let item = superheroes[indexPath.row]
         
-        
+        // Constant variable creation connected to identifier
         let cell: SuperheroViewCell = SuperheroCollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! SuperheroViewCell
         
+        // Accessing the superhero fields
+        cell.superheroeNameLabel.text = item.name
+        cell.superheroeImageView.image = UIImage(named: item.image.url)
+        
         /*
-         
-         // Constant variable to access the horoscope sign fields
-         let item = horoscopeSigns[indexPath.row]
-         
-         // Constant variable creation connected to identifier
-         let cell: HoroscopeTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HoroscopeTableViewCell
-         
-         // Accessing the horoscope sign fields
-         cell.titleLabel.text = item.name
-         cell.subtitleLabel.text = item.date
-         cell.signImageView.image = UIImage(named: item.image)
          
          // calling favoriteRow function from HoroscopeTableViewCell
          cell.favoriteRow(horoscope: item)
