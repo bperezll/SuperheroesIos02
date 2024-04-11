@@ -18,7 +18,7 @@
 		6CD01DA12BC7C6D1009A4EA8 /* SuperheroesIosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD01DA02BC7C6D1009A4EA8 /* SuperheroesIosUITestsLaunchTests.swift */; };
 		6CD01DAF2BC7CAE1009A4EA8 /* Superheroe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD01DAE2BC7CAE1009A4EA8 /* Superheroe.swift */; };
 		6CD01DB12BC7CDD5009A4EA8 /* SuperheroeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD01DB02BC7CDD5009A4EA8 /* SuperheroeProvider.swift */; };
-		6CD01DB42BC7D5CF009A4EA8 /* SuperheroViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD01DB32BC7D5CF009A4EA8 /* SuperheroViewCell.swift */; };
+		6CD01DB62BC7E29F009A4EA8 /* SuperheroViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD01DB52BC7E29F009A4EA8 /* SuperheroViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 		6CD01DA02BC7C6D1009A4EA8 /* SuperheroesIosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroesIosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6CD01DAE2BC7CAE1009A4EA8 /* Superheroe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Superheroe.swift; sourceTree = "<group>"; };
 		6CD01DB02BC7CDD5009A4EA8 /* SuperheroeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroeProvider.swift; sourceTree = "<group>"; };
-		6CD01DB32BC7D5CF009A4EA8 /* SuperheroViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroViewCell.swift; sourceTree = "<group>"; };
+		6CD01DB52BC7E29F009A4EA8 /* SuperheroViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +147,7 @@
 		6CD01DB22BC7D599009A4EA8 /* ViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				6CD01DB32BC7D5CF009A4EA8 /* SuperheroViewCell.swift */,
+				6CD01DB52BC7E29F009A4EA8 /* SuperheroViewCell.swift */,
 			);
 			path = ViewCells;
 			sourceTree = "<group>";
@@ -287,8 +287,8 @@
 				6CD01DB12BC7CDD5009A4EA8 /* SuperheroeProvider.swift in Sources */,
 				6CD01D822BC7C6D0009A4EA8 /* ViewController.swift in Sources */,
 				6CD01D7E2BC7C6D0009A4EA8 /* AppDelegate.swift in Sources */,
-				6CD01DB42BC7D5CF009A4EA8 /* SuperheroViewCell.swift in Sources */,
 				6CD01D802BC7C6D0009A4EA8 /* SceneDelegate.swift in Sources */,
+				6CD01DB62BC7E29F009A4EA8 /* SuperheroViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

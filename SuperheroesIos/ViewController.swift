@@ -31,7 +31,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         let item = superheroes[indexPath.row]
         
-        //let cell:
+        
+        let cell: SuperheroViewCell = SuperheroCollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! SuperheroViewCell
         
         /*
          
@@ -49,11 +50,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
          // calling favoriteRow function from HoroscopeTableViewCell
          cell.favoriteRow(horoscope: item)
          
-         return cell
-         
          */
-         
+         return cell
     }
-
 }
 
