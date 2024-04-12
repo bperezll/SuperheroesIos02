@@ -10,7 +10,7 @@ import UIKit
 struct SuperheroesResponse: Decodable {
     let response: String
     let resultsFor: String
-    let results: Array<Superheroe>
+    let results: Superheroe
 }
 
 struct Superheroe: Decodable {

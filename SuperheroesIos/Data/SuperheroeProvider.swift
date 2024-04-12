@@ -30,9 +30,11 @@ class SuperheroeProvider {
     
     // MARK: API Network calls
         
-    static func getSuperhero(superheroId: String) async throws -> String {
+    //static func getSuperhero(superheroId: String) async throws -> String {
+    static func searchSuperhero(superheroName: String) async throws -> String {
         var result: String
-        let url = URL(string: "https://superheroapi.com/api/7252591128153666/\(superheroId)")
+        //let url = URL(string: "https://superheroapi.com/api/7252591128153666/\(superheroId)")
+        let url = URL(string: "https://superheroapi.com/api/7252591128153666/search/\(superheroName)")
             
         guard let url = url else {
             throw RuntimeError("No url provided")
@@ -43,7 +45,7 @@ class SuperheroeProvider {
         // Parse automático
         let decoded = try JSONDecoder().decode(SuperheroesResponse.self, from: data)
                         
-        result = decoded.response
+        result = decoded.results.name
             
         return result
     }
