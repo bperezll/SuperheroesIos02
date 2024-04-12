@@ -22,6 +22,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         SuperheroCollectionView.delegate = self
         SuperheroCollectionView.dataSource = self
         
+        
         searchBar.delegate = self
     }
 
