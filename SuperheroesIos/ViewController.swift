@@ -31,6 +31,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         // Constant variable to access the superhero fields
         let item = superheroes[indexPath.row]
+        print(item.name)
         
         // Constant variable creation connected to identifier
         let cell: SuperheroViewCell = SuperheroCollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! SuperheroViewCell
@@ -39,13 +40,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cell.superheroeNameLabel.text = item.name
         cell.superheroeImageView.image = UIImage(named: item.image.url)
         
-        /*
-         
-         // calling favoriteRow function from HoroscopeTableViewCell
-         cell.favoriteRow(horoscope: item)
-         
-         */
-         return cell
+        return cell
     }
 }
 
