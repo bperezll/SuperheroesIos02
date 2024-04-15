@@ -7,16 +7,18 @@
 
 import UIKit
 
+// MARK: Superheroes decodable objects
+
 struct SuperheroesResponse: Decodable {
     let response: String
-    let resultsFor: String
-    let results: Superheroe
+    //let resultsFor: String
+    let results: [Superheroe]
 }
 
 struct Superheroe: Decodable {
     let id: String
     let name: String
-    let biography: Biography
+    //let biography: Biography
     let image: Image
 }
 

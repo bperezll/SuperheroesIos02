@@ -11,7 +11,7 @@ class SuperheroeProvider {
     
     // MARK: Data Providers
     
-    static func getSuperheroes() -> [Superheroe] {
+    /*static func getSuperheroes() -> [Superheroe] {
         let list: [Superheroe] = [
             Superheroe(id: "aries", name: "Aries", biography: Biography(firstAppearance: "String", publisher: "String"), image: Image(url: "horoscope-icons/aries")),
             Superheroe(id: "taurus", name: "Taurus", biography: Biography(firstAppearance: "String", publisher: "String"), image: Image(url: "horoscope-icons/taurus")),
@@ -26,13 +26,12 @@ class SuperheroeProvider {
             Superheroe(id: "aquarius", name: "Aquarius", biography: Biography(firstAppearance: "String", publisher: "String"), image: Image(url: "horoscope-icons/aquarius"))
         ]
         return list
-    }
+    }*/
     
     // MARK: API Network calls
         
     //static func getSuperhero(superheroId: String) async throws -> String {
-    static func searchSuperhero(superheroName: String) async throws -> String {
-        var result: String
+    static func searchSuperhero(superheroName: String) async throws -> [Superheroe] {
         //let url = URL(string: "https://superheroapi.com/api/7252591128153666/\(superheroId)")
         let url = URL(string: "https://superheroapi.com/api/7252591128153666/search/\(superheroName)")
             
@@ -44,10 +43,8 @@ class SuperheroeProvider {
             
         // Parse automático
         let decoded = try JSONDecoder().decode(SuperheroesResponse.self, from: data)
-                        
-        result = decoded.results.name
-            
-        return result
+        
+        return decoded.results
     }
         
     // MARK: Utils
