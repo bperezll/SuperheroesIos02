@@ -9,30 +9,10 @@ import Foundation
 
 class SuperheroeProvider {
     
-    // MARK: Data Providers
-    
-    /*static func getSuperheroes() -> [Superheroe] {
-        let list: [Superheroe] = [
-            Superheroe(id: "aries", name: "Aries", biography: Biography(firstAppearance: "String", publisher: "String"), image: Image(url: "horoscope-icons/aries")),
-            Superheroe(id: "taurus", name: "Taurus", biography: Biography(firstAppearance: "String", publisher: "String"), image: Image(url: "horoscope-icons/taurus")),
-            Superheroe(id: "gemini", name: "Gemini", biography: Biography(firstAppearance: "String", publisher: "String"), image: Image(url: "horoscope-icons/gemini")),
-            Superheroe(id: "cancer", name: "Cancer", biography: Biography(firstAppearance: "String", publisher: "String"), image: Image(url: "horoscope-icons/cancer")),
-            Superheroe(id: "leo", name: "Leo", biography: Biography(firstAppearance: "String", publisher: "String"), image: Image(url: "horoscope-icons/leo")),
-            Superheroe(id: "virgo", name: "Virgo", biography: Biography(firstAppearance: "String", publisher: "String"), image: Image(url: "horoscope-icons/virgo")),
-            Superheroe(id: "libra", name: "Libra", biography: Biography(firstAppearance: "String", publisher: "String"), image: Image(url: "horoscope-icons/libra")),
-            Superheroe(id: "scorpio", name: "Scorpio", biography: Biography(firstAppearance: "String", publisher: "String"), image: Image(url: "horoscope-icons/scorpio")),
-            Superheroe(id: "sagittarius", name: "Sagittarius", biography: Biography(firstAppearance: "String", publisher: "String"), image: Image(url: "horoscope-icons/sagittarius")),
-            Superheroe(id: "capricorn", name: "Capricorn", biography: Biography(firstAppearance: "String", publisher: "String"), image: Image(url: "horoscope-icons/capricorn")),
-            Superheroe(id: "aquarius", name: "Aquarius", biography: Biography(firstAppearance: "String", publisher: "String"), image: Image(url: "horoscope-icons/aquarius"))
-        ]
-        return list
-    }*/
-    
-    // MARK: API Network calls
-        
-    //static func getSuperhero(superheroId: String) async throws -> String {
+    // MARK: API Network call
+
     static func searchSuperhero(superheroName: String) async throws -> [Superheroe] {
-        //let url = URL(string: "https://superheroapi.com/api/7252591128153666/\(superheroId)")
+        
         let url = URL(string: "https://superheroapi.com/api/7252591128153666/search/\(superheroName)")
             
         guard let url = url else {

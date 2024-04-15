@@ -72,11 +72,22 @@
                     <connections>
                         <outlet property="SuperheroCollectionView" destination="ltB-vb-WUQ" id="3fK-VP-zou"/>
                         <outlet property="searchBar" destination="20k-Y3-dAB" id="QgN-0E-b48"/>
+                        <segue destination="zwo-SY-Me1" kind="show" id="XGD-eH-Njz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9.9236641221374047" y="3.5211267605633805"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="x2j-pz-Pub">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Detail" id="zwo-SY-Me1" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="tZv-VD-HVp"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oo2-E2-YoM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669" y="-49"/>
         </scene>
     </scenes>
     <resources>

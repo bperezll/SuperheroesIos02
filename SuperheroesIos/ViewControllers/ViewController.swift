@@ -16,7 +16,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     // MARK: Variables
     
-    var superheroes: [Superheroe] = []//SuperheroeProvider.getSuperheroes()
+    var superheroes: [Superheroe] = []
     
     // MARK: Life cycle functions
     
@@ -27,7 +27,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         SuperheroCollectionView.delegate = self
         SuperheroCollectionView.dataSource = self
         
-        
+        // Initializing delegate for search bar
         searchBar.delegate = self
     }
     
@@ -82,6 +82,25 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         print("You selected cell #\(indexPath.item)!")
     }
     
+    
+    // No va
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // If is not null the index path, continue with code
+        guard let indexPath = SuperheroCollectionView.indexPathsForSelectedItems else {
+            print("No superheroe selected")
+            return
+        }
+        
+        // Assign constant variable horoscope to the signs
+        ////let superhero = superheroes[indexPath.row]
+        
+        // Assign constant variable to HoroscopeDetailViewController and segue the destination
+        let viewController: DetailViewController = segue.destination as! DetailViewController
+        
+        ////viewController.superheroe = superhero
+    }
+    
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
 
     }
@@ -94,5 +113,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 self.SuperheroCollectionView.reloadData()
             }
         }
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        //self.SuperheroCollectionView.reloadData()
     }
 }

@@ -30,8 +30,8 @@
             filePath = "SuperheroesIos/Data/SuperheroeProvider.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "searchSuperhero(superheroName:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,8 +46,8 @@
             filePath = "SuperheroesIos/Data/SuperheroeProvider.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
             landmarkName = "searchSuperhero(superheroName:)"
             landmarkType = "7">
          </BreakpointContent>
